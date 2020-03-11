@@ -10,4 +10,11 @@ def f1():
         i = i + 1
 
 
+if __name__ == '__main__':
+    print("九九乘法表")
+    f1()
 
+
+def say_hello():
+    print("你好啊")
+    print("我很好哦")
