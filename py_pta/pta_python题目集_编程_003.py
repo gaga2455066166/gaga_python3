@@ -1,33 +1,45 @@
-# 字典合并。输入用字符串表示两个字典，输出合并后的字典, 字典的键用一个字母或数字表示。注意：1
-# 和‘1’是不同的关键字！
-#
-# 输入格式:
-# 在第一行中输入第一个字典字符串
-# 在第二行中输入第二个字典字符串
-#
-# 输出格式:
-# 在一行中输出合并的字典，输出按字典序。"1"
-# 的ASCII吗为49, 大于1，排序时1在前，"1"
-# 在后，其它的也一样。
-#
-# 输入样例1:
-# 在这里给出一组输入。例如：
-#
-# {1: 3, 2: 5}
-# {1: 5, 3: 7}
-#
-# 输出样例1:
-# 在这里给出相应的输出。例如：
-#
-# {1: 8, 2: 5, 3: 7}
-#
-# 输入样例2:
-# 在这里给出一组输入。例如：
-#
-# {"1": 3, 1: 4}
-# {"a": 5, "1": 6}
-#
-# 输出样例2:
-# 在这里给出相应的输出。例如：
-#
-# {1: 4, "1": 9, "a": 5}
+# s1=eval(input())
+# s2=eval(input())
+# list_dig=[]
+# list_wor=[]
+# dic={}
+# for i in s1:
+#     dic[i]=dic.get(i,0)+s1.get(i,0)
+#     if type(i)==type(1):
+#         list_dig.append(i)
+#     elif type(i)==type('w'):
+#         list_wor.append(i)
+# for i in s2:
+#     dic[i] = dic.get(i, 0) + s2.get(i, 0)
+#     if type(i)==type(1):
+#         list_dig.append(i)
+#     elif type(i)==type('w'):
+#         list_wor.append(i)
+# list_dig.sort();list_wor.sort()
+# list=list_dig+list_wor
+# print("{",end="")
+# cnt=0;length=len(dic)
+# for i in list:
+#     if i in dic:
+#         cnt += 1
+#         if type(i)==type(1):
+#             print("{}:{}".format(i,dic[i]),end="")
+#         else:
+#             print('"{}":{}'.format(i,dic[i]),end="")
+#         del dic[i]
+#         if cnt!=length:
+#             print(",",end="")
+# print("}")
+# a = {1: 23, 2: 34}
+# b = {1: 1, 4: 34}
+# c = a.copy()
+# c.update(b)
+# print(c)
+# for num in range(1000, 10000):
+# #     a = num // 1000
+# #     b = (num % 1000) // 100
+# #     c = (num % 100) // 10
+# #     d = num % 10
+# #     m = pow(a, 4) + pow(b, 4) + pow(c, 4) + pow(d, 4)
+# #     if m == num:
+# #         print(num)
