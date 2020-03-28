@@ -1,0 +1,5 @@
+str_a, str_b, str_c = input().split()
+a = eval(str_a)
+b = eval(str_b)
+c = eval(str_c)
+print(b * b - 4 * a * c)
