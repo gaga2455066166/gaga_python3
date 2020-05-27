@@ -1,4 +1,7 @@
 def acronym(phrase):
+    """
+    注释
+    """
     list_phrase = phrase.split()
     str_phrase = ""
     for i in list_phrase:
