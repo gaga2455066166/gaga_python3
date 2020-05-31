@@ -13,6 +13,14 @@ class Hero:
         print(self.name + '英雄死亡')
         pass
 
+    @classmethod
+    def show_action(cls):
+        print('比武')
+
+    @staticmethod
+    def show_organizer():
+        print('B509')
+
     def tong(self, enemy):
         enemy.hp -= 10
         info = '[%s]捅了[%s]谁一刀' % (self.name, enemy.name)
@@ -45,3 +53,8 @@ hero2 = Hero('h2', 100)
 hero1.tong(hero2)
 hero2.kan(hero1)
 hero2.yao()
+Hero.show_action()
+Hero.show_organizer()
+
+if __name__ == '__main__':
+    print('main')
