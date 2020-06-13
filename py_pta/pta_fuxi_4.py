@@ -20,10 +20,10 @@ from itertools import permutations
 
 n = int(input())
 a = [str(i) for i in range(1, n + 1)]
-print(a)
+# print(a)
 s = ""
 s = s.join(a)
-print(s)
+# print(s)
 for i in permutations(s, n):
-    print(i)
+    # print(i)
     print("".join(i))
