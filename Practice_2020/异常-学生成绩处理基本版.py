@@ -10,7 +10,7 @@ s = int(input())
 sums = 0
 c = ''
 for i in range(s):
-    a = input("")
+    a = input()
     if is_number(a.strip()):
         sums += int(a)
     else:
