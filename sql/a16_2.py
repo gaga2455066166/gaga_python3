@@ -1,4 +1,3 @@
-# from mysql import connector
 import pymysql
 import random
 

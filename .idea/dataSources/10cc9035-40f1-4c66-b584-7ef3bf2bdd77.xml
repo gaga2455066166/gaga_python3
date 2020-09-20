@@ -895,31 +895,98 @@
     <user id="283" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="284" parent="3" name="mytab"/>
-    <table id="285" parent="3" name="table"/>
-    <column id="286" parent="284" name="id">
+    <table id="284" parent="3" name="course"/>
+    <table id="285" parent="3" name="mytab"/>
+    <table id="286" parent="3" name="sc"/>
+    <table id="287" parent="3" name="student"/>
+    <table id="288" parent="3" name="table"/>
+    <column id="289" parent="284" name="c_no">
+      <Position>1</Position>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="284" name="c_name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="284" name="c_credit">
+      <Position>3</Position>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="292" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>c_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="293" parent="285" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="284" name="name">
+    <column id="294" parent="285" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="284" name="passwd">
+    <column id="295" parent="285" name="passwd">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="289" parent="284" name="PRIMARY">
+    <key id="296" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="290" parent="285" name="1">
+    <column id="297" parent="286" name="sc_sno">
+      <Position>1</Position>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="286" name="sc_cno">
+      <Position>2</Position>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="286" name="sc_score">
+      <Position>3</Position>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="287" name="s_no">
+      <Position>1</Position>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="287" name="s_name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="287" name="s_sex">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="287" name="s_age">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="304" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="305" parent="288" name="1">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
