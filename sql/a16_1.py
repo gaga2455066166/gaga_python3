@@ -33,7 +33,8 @@ def get_data_list(n):
 
 if __name__ == '__main__':
     print("建立连接...")
-    con = sqlite3.connect(':memory:')
+    # D:\local_github\python\gaga_python3\db\test.db
+    con = sqlite3.connect("D:\\local_github\\python\\gaga_python3\\db\\test.db")
     print("建立游标...")
     cur = con.cursor()
     print('创建一张表mytab...')
