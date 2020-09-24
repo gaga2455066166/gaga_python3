@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Mongo_db_python">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.18">
+    <root id="1">
+      <ServerVersion>4.4.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="Collegea"/>
+    <schema id="3" parent="1" name="admin"/>
+    <schema id="4" parent="1" name="config"/>
+    <schema id="5" parent="1" name="db_python">
+      <Current>1</Current>
+    </schema>
+    <schema id="6" parent="1" name="local"/>
+    <table id="7" parent="5" name="test"/>
+    <column id="8" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="9" parent="7" name="name">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="10" parent="7" name="passwd">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
