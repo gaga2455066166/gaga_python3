@@ -10,7 +10,7 @@ handler_bat = db.Data_bat
 
 today = datetime.date.today()
 
-#逐条插入数据
+# 逐条插入数据
 start_1_by_1 = time.time()
 for i in range(10000):
     delta = datetime.timedelta(days=i)
@@ -18,7 +18,7 @@ for i in range(10000):
     handler_1_by_1.insert_one({'time': str(fact_date), 'data': random.randint(0, 10000)})
 end_1_by_1 = time.time()
 
-#批量插入数据
+# 批量插入数据
 start_bat = time.time()
 insert_list = []
 for i in range(10000):

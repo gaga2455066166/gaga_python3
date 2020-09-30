@@ -25,4 +25,3 @@ mongo
 use Chapter6
 db.white.find()
 '''
-
