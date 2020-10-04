@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+
 client = MongoClient()
 database = client['Chapter6']
 collection = database['spider']
@@ -22,7 +23,6 @@ content_obj = collection.find({'age': 29}, {'_id': 0, 'name': 1, 'salary': 1})
 content = []
 for each in content_obj:
     content.append(each)
-
 
 # 逻辑查询
 content = [x for x in collection.find({'age': {'$gte': 29, '$lte': 40}})]

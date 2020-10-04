@@ -17,7 +17,6 @@ end_1_by_1 = time.time()
 
 print(f'逐条更新数据，一共耗时：{end_1_by_1 - start_1_by_1}')
 
-
 handler_update_2_insert = db.Data_update_2_insert
 start_update_2_insert = time.time()
 insert_list = []
@@ -38,6 +37,3 @@ print(f'把更新变为插入，共耗时：{end_update_2_insert - start_update_
 # mycol = mydb["customers"]
 #
 # mycol.drop()
-
-
-
