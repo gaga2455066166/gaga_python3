@@ -25,5 +25,15 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="Chapter6@localhost" uuid="51b132c4-9003-45ad-90e3-76c2973f5a82">
+      <database-info product="Mongo DB" version="4.4.1" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.8.2" dbms="MONGO" exact-version="4.4.1" exact-driver-version="1.8" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

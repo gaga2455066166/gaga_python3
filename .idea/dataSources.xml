@@ -16,5 +16,11 @@
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://localhost:27017/db_python</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Chapter6@localhost" uuid="51b132c4-9003-45ad-90e3-76c2973f5a82">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://localhost:27017/Chapter6</jdbc-url>
+    </data-source>
   </component>
 </project>
