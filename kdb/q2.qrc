@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="k">
+    <file>img/about_bg.png</file>
+    <file>img/attention_bg.png</file>
+    <file>img/cancel_attention_bg.png</file>
+    <file>img/evaluate_warning_bg.png</file>
+    <file>img/no_btn.png</file>
+    <file>img/price_warning_bg.png</file>
+    <file>img/rankings_bg.png</file>
+    <file>img/update_btn_bg.png</file>
+    <file>img/window_main_bg.png</file>
+    <file>img/yes_btn.png</file>
+  </qresource>
+</RCC>

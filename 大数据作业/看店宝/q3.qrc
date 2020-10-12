@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="m">
-    <file>img/update_btn_bg.png</file>
-    <file>img/window_main_bg.png</file>
-  </qresource>
-</RCC>
